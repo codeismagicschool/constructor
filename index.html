@@ -24,7 +24,35 @@
                 <p>Слоган</p>
                 <input class="title" type="text" name="description" id="description" placeholder="Welcome to my site!">
             </div>
-        
+            <div class="section">
+                <p>Логотип</p>
+                <input class="title" type="url" name="logoUrl" id="logoUrl" placeholder="Logo url">
+            </div>
+            <div class="section">
+                <p>Gallery</p>
+                <div class="left-section" id="gallery">
+                    <input type="radio" name="isGallery" id="isGalleryY" onclick="enableInput()" value="Yes">
+                    <label for="isGalleryY">Да</label>
+                    <input type="radio" name="isGallery" id="isGalleryN" checked onclick="disableInput()" value="No">
+                    <label for="isGalleryN">Нет</label>
+                    <input class="title" type="url" name="image1" id="image1" disabled placeholder="Введите URL изображения">
+                    <input type="button" name="btnAddImg" id="btnAddImg" disabled onclick="addImg()" value="Add img">
+                </div>
+            </div>
+            <div class="section">
+                <p>Menu</p>
+
+                <div class="left-section">
+                    <input type="checkbox" id="menu1" name='menu' value="Home" checked>
+                    <label for="menu1">Home</label><br>
+                    <input type="checkbox" id="menu2" name='menu' value="About" checked>
+                    <label for="menu2">About</label><br>
+                    <input type="checkbox" id="menu3" name='menu' value="Contacts">
+                    <label for="menu3">Contacts</label><br>
+                    <input type="checkbox" id="menu4" name='menu' value="FAQ">
+                    <label for="menu4">FAQ</label><br>
+                </div>
+            </div>
             <div class="section">
                 <input type="button" name="submit" id="submit" value="Отправить" onClick="getData();">
                 <input type="reset" name="reset" id="reset" value="Очистить">
